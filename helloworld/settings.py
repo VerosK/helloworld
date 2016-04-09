@@ -23,7 +23,21 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+# URL prefix for admin static files -- CSS, JavaScript and images.
+# Make sure to use a trailing slash.
+# Examples: "http://foo.com/static/admin/", "/static/admin/".
+# http://stackoverflow.com/questions/8222887/where-are-django-admin-sites-static-media-files-and-how-to-configure
+#ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+# A list of strings representing the host/domain names that this Django site can serve.
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
+# Additional locations of static files
+STATICFILES_DIRS = (
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+)
 
 
 # Application definition
